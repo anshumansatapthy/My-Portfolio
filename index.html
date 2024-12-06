@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9bb46ccdeb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+  <div class="container">
+    <nav>
+        <img src="img/Nme logo 2.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header"> Home </a></li>
+            <li><a href="#about"> About </a></li>
+            <li><a href="#services"> Services </a></li>
+            <li><a href="#portfolio"> Portfolio </a></li>
+            <li><a href="#contact"> Contact </a></li>
+            <i class="fas fa-times" onClick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onClick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+       <p>UI/UX Designer</p>
+       <h1>Hi, I'm <span>Anshuman</span><br>From Puri</h1>
+    </div>
+  </div>
+</div>
+<!-- -------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+             <div class="about-col-1">
+                <img src="img/collage pec.jpg">
+             </div>
+             <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I'm a passionate programmer with a growing skill set in building efficient, user-friendly, and responsive web applications. 
+                   With a foundation in programming principles and a keen eye for detail, I enjoy tackling challenges and turning ideas into 
+                   functional code. Currently, I'm expanding my knowledge in C language, HTML, CSS, JavaScript & web development frameworks. 
+                   My projects have helped me improve problem-solving skills and gain practical experience in coding, debugging, and 
+                   collaborating on software projects. I’m eager to continue learning and evolving in this field, with the goal of 
+                   contributing meaningful solutions to real-world problems.</p>
+
+                  <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab(event,'skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event,'Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event,'Education')">Education</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/ios apps</li>
+
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>3</span><br>UI/UX Design Training at SAMACHAR NIRDESH LTD.</li>
+                        <li><span>2</span><br>Team lead at SAI ASSOCIATES LLP.</li>
+                        <li><span>1</span><br>UI/UX Design Executive at SAI ASSOCIATES LLP.</li>
+
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2024 - Current</span><br>MCA from Centurion University Bhubaneswer.</li>
+                        <li><span>2021 - 2024</span><br>BSC.COMP.SC from CMT Puri.</li>
+                        <li><span>2018 - 2020</span><br>12th from SRC Bhubaneswer.</li>
+
+                    </ul>
+                  </div>
+             </div>
+        </div>
+    </div>
+</div>
+<!-- ....................Services..................... -->
+ <div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+    <div>
+      <i class="fa-solid fa-code"></i>
+      <h2>Web Design</h2>
+      <p>I teach about C language, HTML, CSS, & ETC.</p>
+      <a href="img/My Video.mp4">learn more</a>
+    </div>
+
+    <div>
+      <i class="fa-brands fa-figma"></i>
+      <h2>UI/UX Design</h2>
+      <p>I teach about C language, HTML, CSS, & ETC.</p>
+      <a href="img/My Video.mp4">learn more</a>
+    </div>
+    <!-- <a href="img/My Video.mp4" download class="btn btn2">Download CV</a> -->
+
+    <div>
+      <i class="fa-brands fa-app-store"></i>
+      <h2>Frontend Design</h2>
+      <p>I teach about C language, HTML, CSS, & ETC.</p>
+      <a href="img/My Video.mp4">learn more</a>
+    </div>
+    </div>
+  </div>
+ </div>
+
+<!-- ..................Portfolio.................. -->
+<div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+           <div class="work">
+                <img src="img/at CUTM front.jpg">
+                <div class="layer">
+                  <h3>Social Media App</h3>
+                  <p>The app connects you to the talented people around th world.</p>
+                  <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+           </div>
+           <div class="work">
+            <img src="img/at Dasia Pitha.jpg">
+            <div class="layer">
+              <h3>At Bhakta Dasia Bauri Pitha</h3>
+              <p>Divine of Lord Jagannath</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+       </div>
+       <div class="work">
+        <img src="img/at CUTM tech Style.jpg"> 
+        <div class="layer">
+          <h3>1 day Speker of Our Branch</h3>
+          <p>Master of Computer Application, Centurion University,BBSR</p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div>
+   </div>
+      </div>
+      <a href=="#" class="btn">see more</a>
+    </div>
+</div>
+<!-- -------------------Contacts----------------- -->
+ <div id="contact">
+ <div class="container">
+  <div class="row">
+    <div class="contact-left">
+      <h1 class="sub-title">Contact Me</h1>
+      <p><i class="fa-solid fa-paper-plane"></i>anshumansatapthy0@gmail.com</p>
+      <p><i class="fa-solid fa-phone-volume"></i>7978702801</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/tututuni.labu"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://x.com/telsanshuman"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/telsanshuman"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/anshuman-satapathy2002"><i class="fa-brands fa-linkedin"></i></a>
+                  
+        <!-- -----------------for Download link ------------------------>
+      </div>
+      <a href="img/My Video.mp4" download class="btn btn2">Download CV</a> 
+      <!--------------------- End of download link---------------------->
+    </div>
+    <div class="contact-right">
+      <!-- form name submit to google sheet is use for fill up the form -->
+      <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="tel" name="Mobile" placeholder="Your Mobile" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        <button type="Submit" class="btn btn2">Submit</button>
+        
+      </form>
+      <span id="msg"></span>
+    </div>
+    
+  </div>
+</div>
+<!-- <div class="hr"></div> -->
+<div class="copyright ">
+  <p>© Copyright 2024. All Rights Reserved | Developed Anshuman & Team </p>
+  <a><img class="hr" src="img/Nme logo 2.png"></a>
+</div>
+</div>
+
+
+
+
+<script>
+
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(event,tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-links");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-links");
+    document.getElementById(tabname).classList.add("active-tab");
+    
+  }
+
+</script>
+
+<script>
+
+var sidemeu = document.getElementById("sidemenu");
+
+function openmenu(){
+  sidemeu.style.right = "0";
+}
+function closemenu(){
+  sidemeu.style.right = "-200px";
+}
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx3RkpD65EEknoiWzi9-i-X6i1-274gMM3pYwqNGK21pOn_1YLMfMDLWwbqgcLYqMD6/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully"
+        setTimeout(function(){
+         msg.innerHTML = "" 
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
